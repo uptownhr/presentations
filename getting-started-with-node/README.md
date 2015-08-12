@@ -8,5 +8,5 @@
 
 ## How to run presentation
 1. Install node and npm `apt-get install nodejs npm` *ubuntu example
-2. Install reveal-md `npm install reveal-md` *sudo may be required
+2. Install reveal-md `npm install -g reveal-md` *sudo may be required
 3. run reveal-md `reveal-md index.md`
