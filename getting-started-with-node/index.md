@@ -9,9 +9,9 @@ LOGIN URL: https://kicks.spaces.nexudus.com/Login?ReturnUrl=%2fen%2fprofile
 ---
 
 ##Welcome
-This is our first meetup
+This is our second meetup
 
--  Semi-monthly
+-  Semi-monthly (tue & thur)
 -  Presentations
 -  Demos
 -  Networking
@@ -29,29 +29,53 @@ Questions?
 
 ---
 
-##Why?
+#FAQ
 
----
+----
+
+##Why Node?
+
+----
 
 ##It's Javascript
 -  most used programming language
--  npm (170,000 packages)
+-  npm (170,000+ packages)
 -  asynchronous - non-blocking
+
+----
+
+## Who uses node? 
+
+1. Netflix
+2. New York Times
+3. Paypal
+4. Medium
+5. LinkedIn
+
+----
+
+## Downsides?
+
+1. Asynchronous language
+2. Single process
+
+----
+
+## Questions?
 
 ---
 
-## Cool Packages
--  [express](http://www.express.js)
--  [mongoose](http://www.mongoosejs.com)
--  [commander](https://github.com/tj/commander.js)
--  [browserify](https://www.npmjs.com/package/browserify)
+#Demo
+1. Installation 
+2. Using Reveal-MD
+2. Hello world example
 
 ---
 
 ##Installation
 Google: node install "os"
 
-```
+```bash
 #centos example
 yum install nodejs npm
 
@@ -66,20 +90,111 @@ brew install node
 choco install nodejs.install
 ```
 
+----
+
+##Confirm installation
+
+Test the commands `node` and `npm`, 
+
+```bash
+$ node #might be nodejs on some machines
+>
+```
+
+
+
+```
+$ npm
+Usage: npm <command>
+
+where <command> is one of:
+...
+```
+
+---
+
+##Reveal-MD
+Load this presentation on your machine
+
+```bash
+$ sudo npm install -g reveal-md #installs globally
+
+# get presentations files
+$ git clone https://github.com/uptownhr/presentations.git 
+$ cd presentations
+
+# start reveal server
+$ reveal-md #start reveal-md
+
+#visit reveal server from browser, http://localhost:1948
+```
+
 ---
 
 ##Hello World
+
+```javascript
+$ node
+> console.log('hello world');
 ```
-console.log('hello world');
+```javascript
+hello world
+undefined
 ```
 
----
+----
 
-##Hello world, twitter
+##With Express
+
+```bash
+#create new directory
+mkdir new-hello
+cd new-hello
+
+#initialize npm
+npm init
+
+#install express and save as dependency
+npm install express --save
+
+#create file hello.js
+touch hello.js
 ```
+
+----
+
+### create hello.js
+
+```javascript
+var express = require('express');
+
+var app = express();
+
+app.get('/', function(req,res){
+	res.send('hello world');
+});
+
+app.listen(8080);
+```
+
+Run
+```bash
+$ node hello.js #now visit http://localhost:8080 from your browser
+```
+
+----
+
+##Hello, twitter
+[twitter](https://www.npmjs.com/package/twitter) - Twitter api wrapper
+```bash
+$ npm install --save twitter #install twitter client
+$ touch hello-twitter.js
+```
+
+```javascript
 var Twitter = require('twitter');
-var client = new Twitter({
-    consumer_key: 'xxxx',
+var client = new Twitter({ //need to generate from dev.twitter.com
+    consumer_key: 'xxxx', 
     consumer_secret: 'xxxxx',
     access_token_key: 'xxxx',
     access_token_secret: 'xxxx'
@@ -97,7 +212,17 @@ client.post('statuses/update', message,
 
 ---
 
-#Demo
+## Packages presented today
+- [reveal-md](https://github.com/webpro/reveal-md) - Markdown Presentations
+- [express](http://www.express.js) - micro framework (like sinatra, silex, flask)
+- [twitter](https://www.npmjs.com/package/twitter) - Twitter api wrapper
+
+----
+
+## Other cool packages
+-  [mongoose](http://www.mongoosejs.com) - ODM for mongodb
+-  [commander](https://github.com/tj/commander.js) - node CLI maker
+-  [browserify](https://www.npmjs.com/package/browserify) - convert node packages for the browser
 
 ---
 
