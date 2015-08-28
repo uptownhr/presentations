@@ -28,3 +28,5 @@ De-centralized Opensource Education
 - Self guided 
 - Pair programming
 - Mentors
+
+[http://nodeschool.io/glendora/](http://nodeschool.io/glendora/)
