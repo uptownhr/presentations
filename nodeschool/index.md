@@ -1,10 +1,13 @@
 #glendora javascript meetup
 
-Wifi: Kickson66 / route_66
+##Wifi
 
-User/Pass: Guest@66kicks.co / Dayguest
+Kickson66 / route_66
+
 
 LOGIN URL: https://kicks.spaces.nexudus.com/Login?ReturnUrl=%2fen%2fprofile
+
+User/Pass: Guest@66kicks.co / Dayguest
 
 ---
 
