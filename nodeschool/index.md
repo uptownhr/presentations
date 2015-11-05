@@ -26,6 +26,17 @@ Packages start $199 a month
 
 ---
 
+##Pairing Up
+
+- JS
+ - Ben Holding, Rmc
+- NODE
+ - John, Tuan
+ - James, Vick
+ - Ajit
+
+---
+
 ##Installation
 Google: node install "os"
 
