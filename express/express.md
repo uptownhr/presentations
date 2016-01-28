@@ -1,6 +1,10 @@
 #glendora javascript meetup
 
-Wifi: Kickson66 / route_66
+Wifi: liferay-lax-guest / portal4all
+
+Slide: http://172.16.25.38:1948/express.md
+
+Create free account from https://mongolab.com/ 
 
 ---
 
@@ -40,9 +44,7 @@ Micro-framework
 
 #DEMO
 
-1. Express Setup
-2. package.json 
-3. 
+[http://www.github.com/uptownhr/presentations/express](http://www.github.com/uptownhr/presentations/express)
 
 ---
 
