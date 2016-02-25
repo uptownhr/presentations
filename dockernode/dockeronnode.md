@@ -47,11 +47,11 @@ Virtualization built into the linux kernel
 
 - [Cloud9 Editor](https://github.com/c9/core/)
 - [uptownhr/resume](https://github.com/uptownhr/resume)
-- Dockerfile, Docker Compose
+- [Nginx Proxy](https://github.com/jwilder/nginx-proxy)
 
----
+----
 
-#Docker Toolbox
+##Docker Toolbox
 - Windows and OSX
 - Minimal Virtualbox Image
 - Mounts home directory
@@ -59,18 +59,41 @@ Virtualization built into the linux kernel
 
 [https://www.docker.com/products/docker-toolbox](https://www.docker.com/products/docker-toolbox)
 
----
+----
+
+##Clound 9 Editor
+
+```bash
+# cd into project directory
+> cd presentations directory
+> docker run -d -p 1234:80 -v \
+$(pwd):/workspace kdelfour/cloud9-docker
+```
+
+----
+
+## uptownhr/resume
+```bash
+#git clone
+> git clone https://github.com/uptownhr/resume.git
+> cd resume
+> docker-compose up
+```
+
+----
+
+##Jwilder Nginx Proxy
+```bash
+> docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
+```
+
+----
 
 #Documentations
 - [Docker Engine](https://docs.docker.com/engine/reference/builder/)
 - [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - [Docker Compose](https://docs.docker.com/compose/compose-file/)
 - [Docker Hub](https://hub.docker.com/)
-
----
-
-#Jwilder Nginx Proxy
-[https://github.com/jwilder/nginx-proxy](https://github.com/jwilder/nginx-proxy)
 
 ---
 
