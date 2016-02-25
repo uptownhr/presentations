@@ -83,9 +83,19 @@ $(pwd):/workspace kdelfour/cloud9-docker
 ----
 
 ##Jwilder Nginx Proxy
+
 ```bash
-> docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
+#start nginx proxy
+> docker run -d -p 80:80 \
+-v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
+
+## stop apache or nginx service on your host machine
+## you will get a LISTENING error
+## containers started with VIRTUAL_HOST will now be proxied
 ```
+
+
+
 
 ----
 
