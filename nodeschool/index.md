@@ -22,8 +22,8 @@ Enterprise. Open Source. For Life.
 ##Pairing Up
 
 - First time programming
-- Getting started with Javascript
-- Getting started with Node
+- First time Javascript
+- First time node
 
 ---
 
