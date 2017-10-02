@@ -1,13 +1,8 @@
-#glendora javascript meetup
+#Diamondbar Javascript Meetup
 
-##Wifi
-
-Kickson66 / route_66
-
-
-LOGIN URL: https://kicks.spaces.nexudus.com/Login?ReturnUrl=%2fen%2fprofile
-
-User/Pass: Guest@66kicks.co / Dayguest
+##wifi
+SSID: liferay-lax-guest 
+Password: portal4all
 
 ---
 
@@ -19,21 +14,16 @@ User/Pass: Guest@66kicks.co / Dayguest
 
 ---
 
-##kicks66.co
-Coworking, working with like minded people
-
-Packages start $199 a month
+##liferay
+Enterprise. Open Source. For Life.
 
 ---
 
 ##Pairing Up
 
-- JS
- - Ben Holding, Rmc
-- NODE
- - John, Tuan
- - James, Vick
- - Ajit
+- First time programming
+- First time Javascript
+- First time node
 
 ---
 
@@ -52,7 +42,7 @@ apt-get install npm
 brew install node
 
 #windows example
-download installer from https://nodejs.org/download
+download installer from https://nodejs.org/en/download
 ```
 
 ----
@@ -77,8 +67,3 @@ where <command> is one of:
 ```
 
 ---
-
-#Help
--  Mentors for next nodeschool
--  Need presenters
--  Need designer
