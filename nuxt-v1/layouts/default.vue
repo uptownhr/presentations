@@ -7,13 +7,15 @@
           <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
         </nuxt-link>
 
-        <button class="button navbar-burger">
+        <button
+          @click="toggle_nav"
+          class="button navbar-burger">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" :class="{'is-active': mobile_active}">
         <nuxt-link to="/page-component" class="navbar-item" active-class="is-active">Page Component</nuxt-link>
         <nuxt-link to="/nuxt-config" class="navbar-item">Nuxt Config</nuxt-link>
         <nuxt-link to="/hacker-news" class="navbar-item">News</nuxt-link>
@@ -22,6 +24,22 @@
     <nuxt/>
   </div>
 </template>
+
+<script type="text/ecmascript-6">
+  export default {
+    computed: {
+      mobile_active () {
+        return this.$store.state.nav.mobile_active
+      }
+    },
+
+    methods: {
+      toggle_nav () {
+        this.$store.commit('toggle_mobile_nav')
+      }
+    }
+  }
+</script>
 
 <style>
 html {
