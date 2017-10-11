@@ -43,14 +43,40 @@ module.exports = {
       }
     }
   },
+
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy',
+    '@nuxtjs/pwa',
+    ['@nuxtjs/localtunnel', { subdomain: 'vuela' }]
   ],
+
+  manifest: {
+    name: 'VueLA Demo',
+    short_name: 'vuelademo',
+    lang: 'en'
+  },
+
+  axios: {
+    baseURL: 'http://localhost:3000/api',
+    browserBaseURL: '/api'
+  },
+
+  proxy: {
+    '/api': {
+      target: 'https://hacker-news.firebaseio.com/v0/',
+      pathRewrite: {
+        '^/api': '/'
+      }
+    }
+  },
 
   plugins: [
-    '~/plugins/directives.js'
+    '~/plugins/directives.js',
+    '~/plugins/global-components.js'
   ],
 
-  css: ['~/node_modules/bulma/css/bulma.css'],
+  css: ['~/assets/main.scss'],
 
   router: {
     linkActiveClass: 'is-active'

@@ -14,8 +14,9 @@
         </button>
       </div>
       <div class="navbar-menu">
-        <nuxt-link to="/page-component" class="navbar-item">Page Component</nuxt-link>
+        <nuxt-link to="/page-component" class="navbar-item" active-class="is-active">Page Component</nuxt-link>
         <nuxt-link to="/nuxt-config" class="navbar-item">Nuxt Config</nuxt-link>
+        <nuxt-link to="/hacker-news" class="navbar-item">News</nuxt-link>
       </div>
     </nav>
     <nuxt/>

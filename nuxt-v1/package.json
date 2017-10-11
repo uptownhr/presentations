@@ -13,6 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^4.4.0",
+    "@nuxtjs/localtunnel": "^1.0.0",
+    "@nuxtjs/proxy": "^1.1.2",
+    "@nuxtjs/pwa": "^1.0.2",
     "bulma": "^0.5.3",
     "highlight.js": "^9.12.0",
     "nuxt": "^1.0.0-rc11"
@@ -26,6 +30,8 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6"
   }
 }

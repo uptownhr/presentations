@@ -2,6 +2,9 @@
   <section class="section">
     <div class="container">
       <h1 class="title">{{page_data.label}}</h1>
+      <figure class="image is-128x128">
+        <animated-checkmark size="128"/>
+      </figure>
     </div>
   </section>
 </template>
@@ -9,6 +12,9 @@
 
 <script type="text/ecmascript-6">
   export default {
+    transition: {
+      name: 'page'
+    },
     data () {
       return {
         'vuejs-la': {
