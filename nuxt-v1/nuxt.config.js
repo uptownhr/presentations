@@ -80,5 +80,13 @@ module.exports = {
 
   router: {
     linkActiveClass: 'is-active'
+  },
+
+  generate: {
+    routes: function () {
+      const dynamic_routes = ['/page-component/dynamic/vuejs-la', '/page-component/dynamic/brad-ito', '/page-component/dynamic/james-lee', '/page-component/dynamic/bambee']
+
+      return dynamic_routes
+    }
   }
 }
